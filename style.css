@@ -40,21 +40,29 @@ body{
     text-shadow: 0px 0px 5px white;
 }
 .content{
-    display: flex;
-    justify-content: center;
+    display: flex;  /*區塊並排*/
+    justify-content: center;  /*左右對齊*/
+    padding: 40px 0px; 
+    align-items: center;  /*垂直對齊*/
 }
 .content>.left{
     text-align: center;
-    background-color: rgb(128, 192, 248);
     width: 500px;
 }
 .content>.right{
     width: 600px;
-    background-color: rgb(195, 163, 255);
+    font-size: 16px;
+    line-height: 40px;
 }
+/*.left 中的細節*/
 .content>.left>.head{
     width: 400px;
     height: 400px;
     border-radius: 50%;
     line-height: 50%;
+}
+/*.right 中的細節*/
+.content>.right>.title{
+    font-weight: bold;
+    font-size: 20px;
 }
